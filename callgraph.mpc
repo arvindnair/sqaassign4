@@ -1,0 +1,13 @@
+project (my_callgraph) : oasis_pintool {
+  sharedname = my_callgraph
+  install = .
+  includes += $(PINPP_ROOT)
+  
+
+  Source_Files {
+    my_callgraph.cpp
+    Edge.cpp
+    Vertex.cpp
+    Graph.cpp
+  }
+}
